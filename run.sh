@@ -25,9 +25,9 @@ if [ ! -n "$WERCKER_CHATWORK_NOTIFY_PASSED_MESSAGE" ]; then
 fi
 
 if [ "$WERCKER_RESULT" = "passed" ]; then
-  message=`echo "$WERCKER_CHATWORK_NOTIFY_PASSED_MESSAGE"`
+  message=`echo -e "$WERCKER_CHATWORK_NOTIFY_PASSED_MESSAGE"`
 else
-  message=`echo "$WERCKER_CHATWORK_NOTIFY_FAILED_MESSAGE"`
+  message=`echo -e "$WERCKER_CHATWORK_NOTIFY_FAILED_MESSAGE"`
 fi
 
 result=`curl -s -X POST \
