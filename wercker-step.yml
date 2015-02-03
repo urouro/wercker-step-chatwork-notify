@@ -1,0 +1,17 @@
+name: chatwork-notify
+version: 0.0.1
+description: A wercker step to send a message to a ChatWork room
+keywords:
+  - notification
+  - chatwork
+properties:
+  token:
+    type: string
+    required: true
+  room-id:
+    type: string
+    required: true
+  passed-message:
+    type: string
+  failed-message:
+    type: string
