@@ -1,5 +1,5 @@
 name: chatwork-notify
-version: 0.0.2
+version: 0.0.3
 description: A wercker step to send a message to a ChatWork room
 keywords:
   - notification

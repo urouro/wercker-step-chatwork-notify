@@ -33,7 +33,7 @@ fi
 result=`curl -s -X POST \
   -H "X-ChatWorkToken:$WERCKER_CHATWORK_NOTIFY_TOKEN" \
   -d "body=$message" \
-  "https://api.chatwork.com/v1/rooms/$WERCKER_CHATWORK_NOTIFY_ROOM_ID/messages" \
+  "https://api.chatwork.com/v2/rooms/$WERCKER_CHATWORK_NOTIFY_ROOM_ID/messages" \
   --output "$WERCKER_STEP_TEMP/result.txt" \
   --write-out "%{http_code}"`
 
